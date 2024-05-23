@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+ <body class="bg-black">
+    <div class="flex container mx-auto relative">
+
+     <div class=" w-[250px] ml-3 hover:cursor-pointer relative">
+        <div class=" invert hover:bg-gray-300 container flex items-center px-4 w-[60px] p-3 rounded-full top-1 fixed">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="  w-[39px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-16y2uox r-lwhw9o"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>
+        </div>
+        <div class="fixed top-11">
+            <ul class="invert pt-[10px] ml-[6px]">
+                <li class="flex mb-3 rounded-[20px] px-3 py-1 hover:bg-gray-300 w-fit items-center font-[12px]"><svg viewBox="0 0 24 24" aria-hidden="true" class=" w-[26px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"><g><path d="M21.591 7.146L12.52 1.157c-.316-.21-.724-.21-1.04 0l-9.071 5.99c-.26.173-.409.456-.409.757v13.183c0 .502.418.913.929.913H9.14c.51 0 .929-.41.929-.913v-7.075h3.909v7.075c0 .502.417.913.928.913h6.165c.511 0 .929-.41.929-.913V7.904c0-.301-.158-.584-.408-.758z"></path></g></svg><p class="ml-5 text-[21px] font-bold">Home</p></li>
+                <li class="flex mb-3 rounded-[20px] px-3 py-1 hover:bg-gray-300 w-fit items-center font-[12px]" ><svg viewBox="0 0 24 24" aria-hidden="true" class=" w-[26px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"><g><path d="M10.25 4.25c-3.314 0-6 2.686-6 6s2.686 6 6 6c1.657 0 3.155-.67 4.243-1.757 1.087-1.088 1.757-2.586 1.757-4.243 0-3.314-2.686-6-6-6zm-9 6c0-4.971 4.029-9 9-9s9 4.029 9 9c0 1.943-.617 3.744-1.664 5.215l4.475 4.474-2.122 2.122-4.474-4.475c-1.471 1.047-3.272 1.664-5.215 1.664-4.971 0-9-4.029-9-9z"></path></g></svg><p class="ml-5 text-[21px] font-semibold">Explore</p></li>
+                <li class="flex mb-3 rounded-[20px] px-3 py-1 hover:bg-gray-300 w-fit items-center font-[12px]" ><svg viewBox="0 0 24 24" aria-hidden="true" class=" w-[26px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"><g><path d="M19.993 9.042C19.48 5.017 16.054 2 11.996 2s-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.481 4 4.9 4s4.437-1.718 4.9-4h4.236l-1.143-8.958zM12 20c-1.306 0-2.417-.835-2.829-2h5.658c-.412 1.165-1.523 2-2.829 2zm-6.866-4l.847-6.698C6.364 6.272 8.941 4 11.996 4s5.627 2.268 6.013 5.295L18.864 16H5.134z"></path></g></svg><p class="ml-5 text-[21px] font-semibold">Notifications</p></li>
+                <li class="flex mb-3 rounded-[20px] px-3 py-1 hover:bg-gray-300 w-fit items-center font-[12px]" ><svg viewBox="0 0 24 24" aria-hidden="true" class=" w-[26px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"><g><path d="M1.998 5.5c0-1.381 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.119 2.5 2.5v13c0 1.381-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.119-2.5-2.5v-13zm2.5-.5c-.276 0-.5.224-.5.5v2.764l8 3.638 8-3.636V5.5c0-.276-.224-.5-.5-.5h-15zm15.5 5.463l-8 3.636-8-3.638V18.5c0 .276.224.5.5.5h15c.276 0 .5-.224.5-.5v-8.037z"></path></g></svg><p class="ml-5 text-[21px] font-semibold">Messages</p></li>
+                <li class="flex mb-3 rounded-[20px] px-3 py-1 hover:bg-gray-300 w-fit items-center font-[12px]" ><svg viewBox="0 0 24 24" aria-hidden="true" class=" w-[26px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"><g><g clip-path="url(#14-clip0_2592_269)" clip-rule="evenodd"><path d="M18 4.1H6c-1.05 0-1.9.85-1.9 1.9v12c0 1.05.85 1.9 1.9 1.9h12c1.05 0 1.9-.85 1.9-1.9V6c0-1.05-.85-1.9-1.9-1.9zM6 2h12c2.21 0 4 1.79 4 4v12c0 2.21-1.79 4-4 4H6c-2.21 0-4-1.79-4-4V6c0-2.21 1.79-4 4-4z"></path><path d="M6.68 17.8l8.108-11.58h2.532L9.21 17.8H6.68z"></path></g><defs><clipPath id="14-clip0_2592_269"><rect height="20" rx="1" width="20" x="2" y="2"></rect></clipPath></defs></g></svg><p class="ml-5 text-[21px] font-semibold">Grok</p></li>
+                <li class="flex mb-3 rounded-[20px] px-3 py-1 hover:bg-gray-300 w-fit items-center font-[12px]" ><svg viewBox="0 0 24 24" aria-hidden="true" class=" w-[26px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"><g><path d="M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm15.998.056L23.528 21H9.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977s6.816 2.358 7 8.977zM21.437 19c-.367-3.781-2.17-6.004-4.938-6.004s-4.57 2.223-4.938 6.004h9.875zm-4.938-9c-.799 0-1.527-.279-2.116-.73-.836-.64-1.384-1.638-1.384-2.77 0-1.93 1.567-3.5 3.5-3.5s3.5 1.57 3.5 3.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zm-1.5-3.5c0 .827.673 1.5 1.5 1.5s1.5-.673 1.5-1.5-.673-1.5-1.5-1.5-1.5.673-1.5 1.5zM7.5 3C9.433 3 11 4.57 11 6.5S9.433 10 7.5 10 4 8.43 4 6.5 5.567 3 7.5 3zm0 2C6.673 5 6 5.673 6 6.5S6.673 8 7.5 8 9 7.327 9 6.5 8.327 5 7.5 5z"></path></g></svg><p class="ml-5 text-[21px] font-semibold">Communities</p></li>
+                <li class="flex mb-3 rounded-[20px] px-3 py-1 hover:bg-gray-300 w-fit items-center font-[12px]" ><svg viewBox="0 0 24 24" aria-hidden="true" class=" w-[26px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"><g><path d="M17.863 13.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44zM12 2C9.791 2 8 3.79 8 6s1.791 4 4 4 4-1.79 4-4-1.791-4-4-4z"></path></g></svg><p class="ml-5 text-[21px] font-semibold">Profile</p></li>
+                <li class="flex mb-4 rounded-[20px] px-3 py-1 hover:bg-gray-300 w-fit items-center font-[12px]" ><svg viewBox="0 0 24 24" aria-hidden="true" class=" w-[26px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"><g><path d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z"></path></g></svg><p class="ml-5 text-[21px] font-semibold">More</p></li>
+               
+            </ul>
+            <p class="bg-blue-400 px- py-[11px] rounded-[30px] text-white text-center text-[20px] font-bold w-[210px]">Post</p>
+            <div class="flex m-auto mt-2 space-x-2 items-center w-[230px] ml-[2px] hover:bg-slate-900 p-2 border-white rounded-full">
+                <img class="w-[40px] border-2- rounded-full" src="yash.png">
+                <div class="text-white">    
+                    <p class="font-bold">ganagoni yashwan</p>
+                    <span class="font-extralight">@ganagoni123456</span>
+                </div>
+                <i class="fa-solid fa-ellipsis invert"></i>
+
+            </div>
+        </div>
+        
+     </div>
+                    <!-- ---------------------------    line ------------------------- -->
+
+
+     <div class="invert w-[14px] bg-gray-400">
+        <div class="bg-gray-200 ml-[1px]">
+            <i class="fa-solid fa-caret-up bg-gray-200 w-4 items-center h-5 pt-2 pb-6 pl-[4px] fixed top-0 mr-[8px] "></i>
+            <div class=" bg-gray-900 w-[11.2px] ml-[3px]">      
+            </div>
+            <i class="fa-solid fa-caret-down bg-gray-200 w-[14px] items-center h-5 pt-2 pb-6 pl-[1.8px] fixed bottom-0 mr-[2px]"></i>
+         </div>
+     </div>
+
+
+          <!-- ---------------- container -------------------- -->
+     
+     <div class="  w-[600px] hover:cursor-pointer">
+        <div class="text-white flex justify-center items-center top-0 sticky backdrop-blur-3xl">
+            <div class="hover:bg-gray-900">
+                <div class="hover:bg-gray-800 w-[275px] text-center p-[12px]">
+                    <p class="font-bold">For you</p>
+                </div>
+                <div class="w-[60px] h-[4px] bottom-0 bg-blue-400 rounded-sm ml-[110px]"></div>
+            </div>
+           <div class="hover:bg-gray-800 w-[275px] text-center p-[12px]">
+            <p class="  text-gray-500">Following</p>
+           </div>
+            <i class="fa-solid fa-gear justify-end w-[50px] text-center  hover:bg-gray-800 rounded-full p-4 "></i>
+        </div>
+        <div class="w-full bg-gray-500 h-[0.1px] top-[52px] sticky" ></div>
+        
+        <div>
+            <div class="flex text-white items-center mt-[6px] ml-3 ">
+                <img class="w-[49px] border-2- rounded-full  p-2" src="yash.png">
+                <p class="text-[20px] text-gray-500 ">What is Happening?!</p>
+            </div>
+            <div class="flex items-center justify-center gap-[250px] mt-4">
+                <div class="flex items-center gap-5 ml-[22px]">
+                   <img src="1 (1).png" class="invert w-[17px]">
+                   <img src="gif.png" class="invert w-[18px]">
+                   <img src="poll.png" class="invert w-[17px]">
+                   <img src="emoji.png" class="invert w-[17px]">
+                   <img src="timetable.png" class="invert w-[17px]">
+                   <img src="last.png" class="invert w-[17px]">
+                </div>
+                <p class="bg-blue-500 w-[70px] text-center p-[6px] rounded-full text-white font-bold mb-2">Post </p>
+            </div>
+        </div>
+        <div class="h-[0.1px] bg-gray-600"></div>
+
+        <!-- --------------------------------  post box --------------------------- -->
+          <div class="">
+              <div>
+                <div class="flex items-center gap-1 ml-5">
+                 <img src="elone musk.jpg" class="w-11 mt-3 border-2 rounded-full">
+                 <p class="text-white flex items-center gap-1 font-bold hover:underline mt-1">Elone Musk <img src="verified-removebg-preview.png" class="w-5 h-5"></p>
+                 <span class="text-gray-500 font-extralight text-[15px] mt-1">@Elonmusk  . 5h</span>
+                 <svg viewBox="0 0 24 24" aria-hidden="true" class=" ml-[280px] w-5 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+                </div>
+                <p class="text-white w-[500px] ml-12 font-semibold">Neuralink is a neurotechnology company founded by Elon Musk in 2016 that's developing a brain-computer interface (BCI) called "the Link". The Link is a surgically implanted neural-chip implant that's designed to decode and stimulate brain activity.</p>
+                <p class="text-blue-500 ml-12 mt-[10px]">#Neurolink#Elonmusk</p>
+            </div>
+            <div class="items-center">
+                <img src="Historic Breakthrough Elon Musk’s “Neuralink” Successfully Implants Chip in Human Brain.jpg" class="w-[500px] ml-12 border-black border-2 shadow-lg rounded-[30px] h-[500px]">
+                <ul class="ml-[52px] mt-2 flex items-center gap-[60px]">
+                 <a class="flex text-white items-center text-[14px] gap-1"><img src="message.png" class="invert w-[19px] h-[19px] ">4.5k</a> 
+                 <a href="#" class=" flex items-center text-[14px] font-light text-gray-300"> <img src="arrow.png" class="invert w-[34px]  h-[34px] text-bold">981</a> 
+                 <a href="#" class="flex text-gray-300 items-center text-[14px] gap-[4px]"><img src="heart.png" class="invert w-[18px] h-[18px] text-bold">3k</a>
+                 <a href="#" class="flex text-gray-300 text-[14px] items-center gap-2"><img src="IDIAN.png" class="invert w-[18px] h-[18px] text-bold">212k</a> 
+                  <a class="flex"><img src="bookmark-white.png" class="invert w-[18px] h-[18px] text-bold "><img src="upload.png" class="invert w-[18px] h-[18px] ml-3"></a>
+                </ul>
+                <div class="h-[0.1px] bg-gray-600 mt-2"></div>
+            </div>
+          </div>   
+          <div>
+            <div>
+              <div class="flex items-center gap-1 ml-5">
+               <img src="membour2.jpg" class="w-11 mt-3 border-2 rounded-full">
+               <p class="text-white flex items-center gap-1 font-bold hover:underline mt-1">Jack Ma<img src="verified-removebg-preview.png" class="w-5 h-5"></p>
+               <span class="text-gray-500 font-extralight text-[15px] mt-1">@AlibabaGroup  . 5h</span>
+               <svg viewBox="0 0 24 24" aria-hidden="true" class=" ml-[280px] w-5 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+              </div>
+              <p class="text-white w-[500px] ml-12 font-semibold">Alibaba is a Chinese multinational technology company that specializes in e-commerce, retail, the internet, and technology. It was founded in Hangzhou, Zhejiang on June 28, 1999. Alibaba is one of the world's largest marketplaces.</p>
+              <p class="text-blue-500 ml-12 mt-[10px]">#Neurolink#Elonmusk</p>
+          </div>
+          <div class="items-center">
+              <img src="alibaba.jpg" class="w-[335px] ml-28 border-black border-2 shadow-inner rounded-[30px] h-[500px]">
+              <ul class="ml-[52px] mt-2 flex items-center gap-[60px]">
+               <a class="flex text-white items-center text-[14px] gap-1"><img src="message.png" class="invert w-[19px] h-[19px] ">4.5k</a> 
+               <a href="#" class=" flex items-center text-[14px] font-light text-gray-300"> <img src="arrow.png" class="invert w-[34px]  h-[34px] text-bold">981</a> 
+               <a href="#" class="flex text-gray-300 items-center text-[14px] gap-[4px]"><img src="heart.png" class="invert w-[18px] h-[18px] text-bold">3k</a>
+               <a href="#" class="flex text-gray-300 text-[14px] items-center gap-2"><img src="IDIAN.png" class="invert w-[18px] h-[18px] text-bold">212k</a> 
+                <a class="flex"><img src="bookmark-white.png" class="invert w-[18px] h-[18px] text-bold "><img src="upload.png" class="invert w-[18px] h-[18px] ml-3"></a>
+              </ul>
+              <div class="h-[0.1px] bg-gray-600 mt-2"></div>
+          </div>
+        </div>
+        <div class="">
+            <div>
+              <div class="flex items-center gap-1 ml-5">
+               <img src="membour3.jpg" class="w-11 mt-3 border-2 rounded-full">
+               <p class="text-white flex items-center gap-1 font-bold hover:underline mt-1">Jeff bezos<img src="verified-removebg-preview.png" class="w-5 h-5"></p>
+               <span class="text-gray-500 font-extralight text-[15px] mt-1">@Amazon . 5h</span>
+               <svg viewBox="0 0 24 24" aria-hidden="true" class=" ml-[280px] w-5 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+              </div>
+              <p class="text-white w-[500px] ml-12 font-semibold">Rufus is an expert shopping assistant trained on Amazon's product catalog and information from across the web to answer customer questions on shopping needs, products, and comparisons.</p>
+              <p class="text-blue-500 ml-12 mt-[10px]">#Neurolink#Elonmusk</p>
+          </div>
+          <div class="items-center">
+              <img src="amazon.jpg" class="w-[500px] ml-12 border-black border-2 shadow-inner rounded-[30px] h-[300px]">
+              <ul class="ml-[52px] mt-2 flex items-center gap-[60px]">
+               <a class="flex text-white items-center text-[14px] gap-1"><img src="message.png" class="invert w-[19px] h-[19px] ">4.5k</a> 
+               <a href="#" class=" flex items-center text-[14px] font-light text-gray-300"> <img src="arrow.png" class="invert w-[34px]  h-[34px] text-bold">981</a> 
+               <a href="#" class="flex text-gray-300 items-center text-[14px] gap-[4px]"><img src="heart.png" class="invert w-[18px] h-[18px] text-bold">3k</a>
+               <a href="#" class="flex text-gray-300 text-[14px] items-center gap-2"><img src="IDIAN.png" class="invert w-[18px] h-[18px] text-bold">212k</a> 
+                <a class="flex"><img src="bookmark-white.png" class="invert w-[18px] h-[18px] text-bold "><img src="upload.png" class="invert w-[18px] h-[18px] ml-3"></a>
+              </ul>
+              <div class="h-[0.1px] bg-gray-600 mt-2"></div>
+          </div>
+        </div>
+        <div class="">
+            <div>
+              <div class="flex items-center gap-1 ml-5">
+               <img src="membour4.jpg" class="w-11 mt-3 border-2 rounded-full">
+               <p class="text-white flex items-center gap-1 font-bold hover:underline mt-1">Mark JukerBerg<img src="verified-removebg-preview.png" class="w-5 h-5"></p>
+               <span class="text-gray-500 font-extralight text-[15px] mt-1">@Elonmusk  . 5h</span>
+               <svg viewBox="0 0 24 24" aria-hidden="true" class=" ml-[225px] w-5 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+              </div>
+              <p class="text-white w-[500px] ml-12 font-semibold">Meta AI is an artificial intelligence laboratory owned by Meta Platforms Inc. Meta AI develops various forms of artificial intelligence, including augmented and artificial reality technologies..</p>
+              <p class="text-blue-500 ml-12 mt-[10px]">#Neurolink#Elonmusk</p>
+          </div>
+          <div class="items-center">
+              <img src="meta ai.jpg" class="w-[500px] ml-12 border-black border-2 shadow-lg rounded-[30px] h-[300px]">
+              <ul class="ml-[52px] mt-2 flex items-center gap-[60px]">
+               <a class="flex text-white items-center text-[14px] gap-1"><img src="message.png" class="invert w-[19px] h-[19px] ">4.5k</a> 
+               <a href="#" class=" flex items-center text-[14px] font-light text-gray-300"> <img src="arrow.png" class="invert w-[34px]  h-[34px] text-bold">981</a> 
+               <a href="#" class="flex text-gray-300 items-center text-[14px] gap-[4px]"><img src="heart.png" class="invert w-[18px] h-[18px] text-bold">3k</a>
+               <a href="#" class="flex text-gray-300 text-[14px] items-center gap-2"><img src="IDIAN.png" class="invert w-[18px] h-[18px] text-bold">212k</a> 
+                <a class="flex"><img src="bookmark-white.png" class="invert w-[18px] h-[18px] text-bold "><img src="upload.png" class="invert w-[18px] h-[18px] ml-3"></a>
+              </ul>
+              <div class="h-[0.1px] bg-gray-600 mt-2"></div>
+          </div>
+        </div>
+        <div class="">
+            <div>
+              <div class="flex items-center gap-1 ml-5">
+               <img src="membour5.webp" class="w-11 mt-3 border-2 rounded-full">
+               <p class="text-white flex items-center gap-1 font-bold hover:underline mt-1">Bernard Arnault<img src="verified-removebg-preview.png" class="w-5 h-5"></p>
+               <span class="text-gray-500 font-extralight text-[15px] mt-1">@Industries  . 5h</span>
+               <svg viewBox="0 0 24 24" aria-hidden="true" class=" ml-[210px] w-5 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+              </div>
+              <p class="text-white w-[500px] ml-12 font-semibold">Neuralink is a neurotechnology company founded by Elon Musk in 2016 that's developing a brain-computer interface (BCI) called "the Link". The Link is a surgically implanted neural-chip implant that's designed to decode and stimulate brain activity.</p>
+              <p class="text-blue-500 ml-12 mt-[10px]">#Neurolink#Elonmusk</p>
+          </div>
+          <div class="items-center">
+              <img src="benald.jpg" class="w-[340px] ml-28 border-black border-2 shadow-lg rounded-[30px] h-[500px]">
+              <ul class="ml-[52px] mt-2 flex items-center gap-[60px]">
+               <a class="flex text-white items-center text-[14px] gap-1"><img src="message.png" class="invert w-[19px] h-[19px] ">4.5k</a> 
+               <a href="#" class=" flex items-center text-[14px] font-light text-gray-300"> <img src="arrow.png" class="invert w-[34px]  h-[34px] text-bold">981</a> 
+               <a href="#" class="flex text-gray-300 items-center text-[14px] gap-[4px]"><img src="heart.png" class="invert w-[18px] h-[18px] text-bold">3k</a>
+               <a href="#" class="flex text-gray-300 text-[14px] items-center gap-2"><img src="IDIAN.png" class="invert w-[18px] h-[18px] text-bold">212k</a> 
+                <a class="flex"><img src="bookmark-white.png" class="invert w-[18px] h-[18px] text-bold "><img src="upload.png" class="invert w-[18px] h-[18px] ml-3"></a>
+              </ul>
+              <div class="h-[0.1px] bg-gray-600 mt-2"></div>
+          </div>
+        </div>    
+
+     </div>
+                  <!-- ------------------  left-bar  -------------------------------- -->
+
+     <div class="w-[0.1px] bg-gray-600" ></div>
+     <div class=" w-[390px]">
+        <div class="m-auto flex items-center justify-center ml-4  hover:border-blue-800 hover:bg-transparent w-360px">
+            <i class="fa-solid fa-magnifying-glass font-[15px] text-white bg-gray-800 p-[12px] mt-2 border-1 rounded-full hover:bg-transparent hover:border-blue-600 border-2  border-gray-800 items-center"><input type="text" placeholder="Search" class="w-[290px] bg-gray-800  border-1 rounded-r-full justify-center  bg-transparent text-[12px] ml-5"></i>
+        </div>
+        <div class="text-white w-[350px] m-auto border-2 border-gray-600 p-2 pl-5 mt-3 rounded-[10px] hover:cursor-pointer">
+            <h1 class="font-bold text-[20px]">Subscribe to Premium</h1>
+            <p class="mt-[7px] mb-[6px]">Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+            <p class="bg-blue-500 broder-2 p-[6px] rounded-full w-[100px] text-center font-bold">Subscribe</p>
+
+        </div>
+        <div class="text-white w-[350px] m-auto border-2 border-gray-600 p-2 pl-5 mt-3 rounded-[10px]">
+           <h1 class="font-bold text-[20px] hover:cursor-pointer mb-5">Live on x</h1>
+           <div class="flex justify-evenly">
+           <!-- ---------------------------- live box ---------------- -->
+
+            <div class="hover:cursor-pointer">
+                <div class="mb-5">
+
+                    <div class="flex items-center">
+                        <img src="elone musk.jpg" class="w-6 rounded-full border-[0.1px] border-white  ">
+                        <p class="font-bold text-[14px] ml-[3px] flex">Elone Musk <img src="verified-removebg-preview.png" class="w-[16px] h-[16px] ml-[5px] mt-[3px]"></p>
+                        <span class="text-[14px] font-extralight text-gray-500 ml-[5px]">is hosting</span>
+                    </div>
+                    <div class="flex items-center">
+                    <p class="text-[15px] font-bold w-full">Neuralink is a neurotechnology company founded by
+                         Elon Musk in 2016 that aims to develop brain-computer interfaces (BCIs).
+                         The company's flagship device, called "the Link", is a coin-sized</p>
+                         <div class="">
+                            <div class="border-2 border-pink-500 rounded-full p-[1px] items-center">
+                                <p class="flex text-[14px] text-center font-semibold pr-6"><img src="elone musk.jpg " class="w-7 rounded-full border-[0.1px] border-white">+1.5M</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+
+               <div class="mb-5">
+                    <div class="flex items-center">
+                        <img src="membour2.jpg" class="w-6 rounded-full border-[0.1px] border-white  ">
+                        <p class="font-bold text-[14px] ml-[3px] flex">Jack Ma<img src="verified-removebg-preview.png" class="w-[16px] h-[16px] ml-[5px] mt-[3px]"></p>
+                        <span class="text-[14px] font-extralight text-gray-500 ml-[5px]">is hosting</span>
+                    </div>
+                    <div class="flex items-center">
+                    <p class="text-[15px] font-bold w-full">Teacher, philanthropist, entrepreneur. Founder of 
+                        @AlibabaGroup
+                         and 
+                        @foundation_ma
+                        , #UNSDG Advocate.
+                        Hangzhou, China</p>
+                         <div class="">
+                            <div class="border-2 border-pink-500 rounded-full p-[1px] items-center">
+                                <p class="flex text-[14px] text-center font-semibold pr-6"><img src="membour2.jpg" class="w-7 rounded-full border-[0.1px] border-white">+1.5M</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="mb-5">
+                    <div class="flex items-center">
+                        <img src="membour3.jpg" class="w-6 rounded-full border-[0.1px] border-white  ">
+                        <p class="font-bold text-[14px] ml-[3px] flex">Jack Ma<img src="verified-removebg-preview.png" class="w-[16px] h-[16px] ml-[5px] mt-[3px]"></p>
+                        <span class="text-[14px] font-extralight text-gray-500 ml-[5px]">is hosting</span>
+                    </div>
+                    <div class="flex items-center">
+                    <p class="text-[15px] font-bold w-full">Tech and e-commerce giant Amazon has decided to shut its distribution services 
+                        in India after closing its food delivery and education service, Business Today has learnt.</p>
+                         <div class="">
+                            <div class="border-2 border-pink-500 rounded-full p-[1px] items-center">
+                                <p class="flex text-[14px] text-center font-semibold pr-6"><img src="membour3.jpg" class="w-7 rounded-full border-[0.1px] border-white">+1.5M</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="mb-5">
+                    <div class="flex items-center">
+                        <img src="membour4.jpg" class="w-6 rounded-full border-[0.1px] border-white  ">
+                        <p class="font-bold text-[14px] ml-[3px] flex">Mark Zukerberg<img src="verified-removebg-preview.png" class="w-[16px] h-[16px] ml-[5px] mt-[3px]"></p>
+                        <span class="text-[14px] font-extralight text-gray-500 ml-[5px]">is hosting</span>
+                    </div>
+                    <div class="flex items-center">
+                    <p class="text-[15px] font-bold w-full">10 Instagram Features To Make Your Life Easier In 2024,Unlock creativity with Reels.
+                         Easily create fun, entertaining videos to share with friends or anyone on Instagram. Reels.</p>
+                         <div class="">
+                            <div class="border-2 border-pink-500 rounded-full p-[1px] items-center">
+                                <p class="flex text-[14px] text-center font-semibold pr-6"><img src="membour4.jpg" class="w-7 rounded-full border-[0.1px] border-white">+1.5M</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            
+            
+
+           </div>
+        </div>
+     <!-- --------------------------------  trending ------------------------------? -->
+     <div class="text-white w-[350px] m-auto border-2 border-gray-600 p-2 pl-5 mt-3 rounded-[10px] hover:cursor-pointer sticky top-[-460px]">
+        <h1 class="text-[20px] font-bold">What's happening</h1>
+        <div class="flex mt-3 hover:bg-slate-950 w-full">
+            <div class="w-full">
+                <span class="text-[14px] text-gray-500">Trending</span>
+                <h1 class="text-[17px] font-bold">#They CallHimOG</h1>
+                <span class="text-[14px] text-gray-500">19.2k posts</span>
+            </div>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class=" ml-[100px] w-8 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+        </div>
+        <div class="flex mt-3 hover:bg-slate-950 w-full">
+            <div class="w-full">
+                <span class="text-[14px] text-gray-500">Trending</span>
+                <h1 class="text-[17px] font-bold">#PULLAMMA</h1>
+                <span class="text-[14px] text-gray-500">19.2k posts</span>
+            </div>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class=" ml-[100px] w-8 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+        </div>
+        <div class="flex mt-3 hover:bg-slate-950 w-full">
+            <div class="w-full">
+                <span class="text-[14px] text-gray-500">Sports.Trending</span>
+                <h1 class="text-[17px] font-bold">#Orange Army</h1>
+                <span class="text-[14px] text-gray-500">19.2k posts</span>
+            </div>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class=" ml-[100px] w-8 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+        </div>
+        <div class="flex mt-3 hover:bg-slate-950 w-full">
+            <div class="w-full">
+                <span class="text-[14px] text-gray-500">Sports.Trending</span>
+                <h1 class="text-[17px] font-bold">#Rcb vs KKR</h1>
+                <span class="text-[14px] text-gray-500">19.2k posts</span>
+            </div>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class=" ml-[100px] w-8 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+        </div>
+        <div class="flex mt-3 hover:bg-slate-950 w-full mb-3">
+            <div class="w-full">
+                <span class="text-[14px] text-gray-500">Entertainment.Trending</span>
+                <h1 class="text-[17px] font-bold">#Yashwanth</h1>
+                <span class="text-[14px] text-gray-500">19.2k posts</span>
+            </div>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class=" ml-[100px] w-8 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+        </div>
+        <a href="#" class="text-blue-500">See more</a>
+
+    </div>
+    <div class="text-white w-[350px] m-auto border-2 border-gray-600 p-2 pl-5 mt-3 rounded-[10px] hover:cursor-pointer sticky top-[10vh]">
+        <h1 class="font-bold text-[20px] mb-[20px]">Who to Follow</h1>
+         <div class="flex w-full pb-5">
+            <div class="flex">
+                <img src="Screenshot (122).png" class="w-[40px] h-[40px] border-0 rounded-full mr-3">
+                <div class="text-center">
+                    <p class="font-bold">Jalaludhin jamar</p>
+                    <span class="text-[16px] text-gray-500">@jihad Activist</span>
+                </div>
+            </div>
+            <div>
+                <p class="ml-[65px] bg-white text-black border-2 rounded-[18px] p-[3px] w-[75px] text-center font-semibold">Follow</p>
+            </div>
+             
+         </div> 
+         <div class="flex w-full pb-5">
+            <div class="flex">
+                <img src="membour2.jpg" class="w-[40px] h-[40px] border-0 rounded-full mr-3">
+                <div class="text-center">
+                    <p class="font-bold">Jack Ma</p>
+                    <span class="text-[16px] text-gray-500">@Ali baba</span>
+                </div>
+            </div>
+            <div>
+                <p class="ml-[115px] bg-white text-black border-2 rounded-[18px] p-[3px] w-[75px] text-center font-semibold">Follow</p>
+            </div>
+             
+         </div> 
+         <div class="flex w-full pb-5">
+            <div class="flex">
+                <img src="membour4.jpg" class="w-[40px] h-[40px] border-0 rounded-full mr-3">
+                <div class="text-center">
+                    <p class="font-bold">Mark Zukerberg</p>
+                    <span class="text-[16px] text-gray-500 mr-8">@facebook</span>
+                </div>
+            </div>
+            <div>
+                <p class="ml-[65px] bg-white text-black border-2 rounded-[18px] p-[3px] w-[75px] text-center font-semibold">Follow</p>
+            </div>
+             
+         </div> 
+         <div class="flex w-full pb-5">
+            <div class="flex">
+                <img src="elone musk.jpg" class="w-[40px] h-[40px] border-0 rounded-full mr-3">
+                <div class="text-center">
+                    <p class="font-bold">Elon Musk</p>
+                    <span class="text-[16px] text-gray-500">@EloneMusk</span>
+                </div>
+            </div>
+            <div>
+                <p class="ml-[95px] bg-white text-black border-2 rounded-[18px] p-[3px] w-[75px] text-center font-semibold">Follow</p>
+            </div>
+             
+         </div> 
+         
+        <a href="#" class="text-blue-500">See more</a>
+
+    </div>
+     
+    <div class="sticky top-[73vh]">
+
+        <div class="flex gap-3 text-gray-500 ml-7 mt-5">
+            <div class="text-[15px]">Terms of sercices</div>
+            <div class="text-[15px]">privacy policy</div>
+            <div class="text-[15px]">Cookie Policy</div>
+        </div>
+        <div class="flex gap-3 text-gray-500 ml-7">
+            <div class="text-[15px]">Accessibility</div>
+            <div class="text-[15px]">Ads Info</div>
+            <div class="text-[15px]">More...</div>
+            <div class="text-[13px]"><i class="fa-solid fa-copyright"></i>2024 x Copy</div>
+        </div>
+        <div class="ml-16 mt-2 text-gray-500 flex items-center font-extrabold gap-2 "><img src="yash.png" class="rounded-full border-2 w-[50px]"><i class="fa-solid fa-copyright"></i>G.YASHWANTH</div>
+    </div>
+        
+     </div>
+
+    </div>
+</body>
+</html>
